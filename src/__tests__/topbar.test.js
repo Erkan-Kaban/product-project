@@ -29,7 +29,6 @@ describe('TopBar', () => {
 
   it('renders an option element with the value of "All"', () => {
     render(<TopBar />);
-    const selectElement = screen.getByTestId('filter-dropdown');
     const allOptionElement = screen.getByTestId('option-all');
     expect(allOptionElement).toBeInTheDocument();
     expect(allOptionElement.value).toEqual('All');
