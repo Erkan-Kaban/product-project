@@ -55,7 +55,7 @@ adjusted spacing around like the wireframe */
 body {
   background-color: black;
   min-height: 80%;
-  margin: 6rem;
+  margin: 5%;
 }
 :root {
   background-color: rgb(29,66,33);
