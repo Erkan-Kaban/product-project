@@ -1,11 +1,3 @@
-/* .topBarContainer h1 {
-    background-color: white;
-    min-height: 80%;
-    min-width: 100%;
-    color: red;
-    
-} */
-
 /* contents of the top bar */
 /* setting height of it's contents, using flex to position the contents correctly */
 .topBarContents {
@@ -19,10 +11,12 @@
 
 /* positioning filter drop down and label */
 .filter-dropdown {
-    margin-right: 5rem;
+    margin-right: 2rem;
+    width: 70px;
 }
 
 /* Positioning some spacing between drop down box and filter by label */
 .label-for-filter {
     margin-right: 1rem;
 }
+
