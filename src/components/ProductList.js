@@ -20,7 +20,7 @@ const productList = [
         "isSale": false,
         "price": "$24.99",
         "productImage": "Product_3.jpeg",
-        "productName": "Kirin Megumi 4x6x330ml",
+        "productName": "../assets/KirinMegumi.png",
         "type": "Beer"
     },
     {
