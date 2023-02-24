@@ -1,0 +1,32 @@
+.product-card-container {
+    display: flex;
+    background-color: yellowgreen;
+    color: black;
+    border: black 1px solid;
+    flex-wrap: wrap;
+   
+}
+
+.product-card-item {
+    display: flex;
+    flex-direction: column;
+    border: black 1px solid;
+    align-items: center;
+}
+
+.product-image {
+    height: 9em;
+    object-fit: contain;
+}
+
+.product-card {
+   width: 25%;
+   padding: 1%;
+   
+}
+
+.product-card p {
+    width: 100%;
+    text-align: center;
+    font-size: auto;
+}
