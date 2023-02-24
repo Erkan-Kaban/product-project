@@ -14,6 +14,8 @@ const TopBar = ({ handleFilterChange }) => {
   return (
     <>
       <section className='topBarContents'>
+        <label htmlFor='search-bar'>Search For:</label>
+        <input onChange={handleFilterChange} type='text' className='search-bar' id='search-bar' data-testid="search-bar" />
         <label htmlFor='filter-dropdown' className='label-for-filter'>Filter By</label>
         <select onChange={handleFilterChange} className='filter-dropdown' id='filter-dropdown' data-testid="filter-dropdown">
         <option data-testid="option" value=''>All</option>
