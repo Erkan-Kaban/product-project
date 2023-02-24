@@ -1,6 +1,7 @@
 import React from 'react'
 import './topbar.css'
 import productList from '../ProductList.js'
+import { TopBarContents } from './styled-components.js'
 
 
 // Creating a functional component called TopBar and exporting it to be used in App.js
@@ -13,7 +14,7 @@ const TopBar = ({ handleFilterChange }) => {
 
   return (
     <>
-      <section className='topBarContents'>
+      <TopBarContents>
         <div className='search-section'>
           <label className="search-bar-label" htmlFor='search-bar'>Search Beverage</label>
           <input onChange={handleFilterChange} type='text' className='search-bar' id='search-bar' data-testid="search-bar" />
@@ -29,7 +30,7 @@ const TopBar = ({ handleFilterChange }) => {
             ))}
           </select>
         </div>
-      </section>
+      </TopBarContents>
     </>
   )
 

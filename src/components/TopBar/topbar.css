@@ -1,6 +1,6 @@
 /* contents of the top bar */
 /* setting height of it's contents, using flex to position the contents correctly */
-.topBarContents {
+/* .topBarContents {
     height: 10vh;
     background-color: red;
     display: flex;
@@ -8,11 +8,12 @@
     align-items: center;
     color: white;
     padding: 2rem;
-}
+} */
 
 /* Positioning some spacing between drop down box and filter by label */
 .label-for-filter {
     margin-right: 1rem;
+    
 }
 
 .search-bar-label {
