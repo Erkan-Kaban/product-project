@@ -4,7 +4,18 @@
     color: black;
     border: black 1px solid;
     flex-wrap: wrap;
-    /* min-width: 25%; */
+}
+
+.for-sale-tag p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    max-width: 30%;
+    height: 20%;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
 }
 
 .product-card-item {
@@ -15,6 +26,7 @@
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 .product-image {
