@@ -14,17 +14,21 @@ const TopBar = ({ handleFilterChange }) => {
   return (
     <>
       <section className='topBarContents'>
-        <label htmlFor='search-bar'>Search For:</label>
-        <input onChange={handleFilterChange} type='text' className='search-bar' id='search-bar' data-testid="search-bar" />
-        <label htmlFor='filter-dropdown' className='label-for-filter'>Filter By</label>
-        <select onChange={handleFilterChange} className='filter-dropdown' id='filter-dropdown' data-testid="filter-dropdown">
-        <option data-testid="option" value=''>All</option>
+        <div className='search-section'>
+          <label className="search-bar-label" htmlFor='search-bar'>Search Beverage</label>
+          <input onChange={handleFilterChange} type='text' className='search-bar' id='search-bar' data-testid="search-bar" />
+        </div>
+        <div className='filter-section'>
+          <label htmlFor='filter-dropdown' className='label-for-filter'>Filter By</label>
+          <select onChange={handleFilterChange} className='filter-dropdown' id='filter-dropdown' data-testid="filter-dropdown">
+            <option data-testid="option" value=''>All</option>
             {types.map((type) => (
-                <option key={type} value={type}>
+              <option key={type} value={type}>
                 {type}
-                </option>
+              </option>
             ))}
-        </select>
+          </select>
+        </div>
       </section>
     </>
   )

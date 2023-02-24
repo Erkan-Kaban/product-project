@@ -1,18 +1,13 @@
 /* contents of the top bar */
 /* setting height of it's contents, using flex to position the contents correctly */
 .topBarContents {
-   height: 10vh;
-   background-color: red;
-   display: flex;
-   justify-content: flex-end;
-   align-items: center;
-   color: white;
-}
-
-/* positioning filter drop down and label */
-.filter-dropdown {
-    margin-right: 2rem;
-    width: 70px;
+    height: 10vh;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 2rem;
 }
 
 /* Positioning some spacing between drop down box and filter by label */
@@ -20,3 +15,28 @@
     margin-right: 1rem;
 }
 
+.search-bar-label {
+    margin: 0 1rem;
+}
+
+.search-bar {
+    width: 35%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .search-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .search-bar-label {
+        margin: 0;
+    }
+
+    .search-bar {
+        width: 60%;
+    }
+
+}

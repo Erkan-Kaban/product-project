@@ -7,9 +7,9 @@ const ProductCard = ( { productList }) => {
         <div className='product-card-container'>
             {productList.map((product, index) => {
                 return (
-                    <div className='product-card'>
-                        <div className='product-card-item' key={index}>
-                            <p className='for-sale-tag'>{product.isSale ? <p>On Sale!</p> : ''}</p>
+                    <div className='product-card' key={index}>
+                        <div className='product-card-item'>
+                            <p>{product.isSale ? <span className='for-sale-tag'>On Sale!</span> : ''}</p>
                             <img className='product-image' src={product.productImage} alt={product.name}></img>
                             <p>{product.productName}</p>
                             <p>{product.price}</p>

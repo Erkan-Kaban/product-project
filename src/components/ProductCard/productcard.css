@@ -6,7 +6,7 @@
     flex-wrap: wrap;
 }
 
-.for-sale-tag p{
+.for-sale-tag {
     position: absolute;
     top: 0;
     left: 0;
@@ -33,9 +33,10 @@
     height: 10em;
     object-fit: contain;
 }
+
 .product-card {
-   width: 25%;
-   padding: 5px;
+    width: 25%;
+    padding: 5px;
 }
 
 .product-card p {
@@ -49,12 +50,13 @@
     .product-card {
         width: 50%;
         align-items: center;
-     }
-  }
+    }
+}
+
 @media only screen and (max-width: 400px) {
 
     .product-card {
         width: 100%;
         align-items: center;
-     }
-  }
+    }
+}
