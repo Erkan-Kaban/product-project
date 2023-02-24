@@ -1,8 +1,8 @@
 import React from 'react'
-import productList from '../ProductList.js'
 import './productcard.css'
 
-const ProductCard = () => {
+const ProductCard = ( { productList }) => {
+
     return (
         <div className='product-card-container'>
             {productList.map((product, index) => {
@@ -14,7 +14,6 @@ const ProductCard = () => {
                             <p>{product.productName}</p>
                             <p>{product.price}</p>
                             <p>{product.type}</p>
-
                         </div>
                     </div>
                 )
