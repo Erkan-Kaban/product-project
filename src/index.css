@@ -59,8 +59,10 @@ body {
   background-color: rgb(29,66,33);
   min-height: 80%;
   margin: 5%;
+  padding-bottom: 2rem;
 }
 :root {
   background-color: rgb(29,66,33);
   height: 100%;
+  
 }

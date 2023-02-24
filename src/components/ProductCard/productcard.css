@@ -14,8 +14,8 @@ b {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(253, 0, 0, 0.726);
-    min-width: 25%;
+    background-color: rgb(253, 0, 0);
+    width: 25%;
     height: 20%;
     border-radius: 5%;
     display: flex;
@@ -48,7 +48,7 @@ b {
 
 .product-card {
     width: 25%;
-    padding: 5px;
+    padding: 7px;
 }
 
 .product-card p {
@@ -58,7 +58,7 @@ b {
     margin-top: 1rem;
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 950px) {
 
     .product-card {
         width: 50%;
@@ -66,7 +66,7 @@ b {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 
     .product-card {
         width: 100%;
