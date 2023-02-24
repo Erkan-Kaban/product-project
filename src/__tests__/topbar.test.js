@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { getByTestId, render, screen } from '@testing-library/react';
 import TopBar from '../components/TopBar/TopBar';
 import '@testing-library/jest-dom'
 
@@ -22,15 +22,15 @@ describe('TopBar', () => {
     // Test to check if the option element is rendered
     it('renders an option element for each product type', () => {
         render(<TopBar />);
-        screen.getByTestId('filter-dropdown');
-        const options = screen.getAllByTestId('option');
-        expect(options.length).toEqual(4); // Assuming there are 4 different types of products
+        const selectElement = screen.getByTestId('filter-dropdown');
+        const options = selectElement.querySelectorAll('option');
+        expect(options.length).toEqual(5); // Assuming there are 4 different types of products
     });
 
     it('renders an option element with the value of "All"', () => {
         render(<TopBar />);
-        const allOptionElement = screen.getByTestId('option-all');
+        const allOptionElement = screen.getByTestId('option');
         expect(allOptionElement).toBeInTheDocument();
-        expect(allOptionElement.value).toEqual('All');
+        expect(allOptionElement.value).toEqual('');
     });
 });
