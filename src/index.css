@@ -1,9 +1,8 @@
+/* Imported Roboto font from Google */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 /* Reset all default behavior to the settings below */
-
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -59,10 +58,9 @@ body {
   background-color: rgb(29,66,33);
   min-height: 80%;
   margin: 5%;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 :root {
   background-color: rgb(29,66,33);
   height: 100%;
-  
 }

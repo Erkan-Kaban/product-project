@@ -1,5 +1,3 @@
-// import logo from './logo.svg';
-import './App.css';
 import TopBar from './components/TopBar/TopBar.js'
 import ProductCard from './components/ProductCard/ProductCard.js'
 import productList from './components/ProductList.js'

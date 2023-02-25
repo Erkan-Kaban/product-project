@@ -7,6 +7,7 @@ import { TopBarContents } from './styled-components.js'
 // Creating a functional component called TopBar and exporting it to be used in App.js
 // The component is returning a section element with a label and select element
 // The select element has an option element with the value of All
+// handFilterCange is passed down from App that sets the filterValue to the value of the select element
 const TopBar = ({ handleFilterChange }) => {
 
   // Creating a variable called types and setting it to an array of unique types from the productList

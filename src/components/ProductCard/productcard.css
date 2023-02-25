@@ -1,3 +1,5 @@
+
+/* container contains all the product cards and flex wraps all the items */
 .product-card-container {
     display: flex;
     background-color: white;
@@ -10,47 +12,53 @@ b {
     font-weight: bold;
 }
 
+/* With the for sale tag I made it absolute so it floats over each card and positioned  */
 .for-sale-tag {
     position: absolute;
     top: 0;
     left: 0;
     background-color: rgb(253, 0, 0);
     width: 25%;
-    height: 20%;
+    height: 15%;
     border-radius: 5%;
     display: flex;
     align-items: center;
     font-weight: bold;
     justify-content: center;
+    color: white;
 }
 
-.product-card-item {
+/* This is the css for each product card inner contents itself */
+.product-card-contents {
     display: flex;
     flex-direction: column;
     border: rgba(0, 0, 0, 0.363) 1.5px solid;
     align-items: center;
     flex-wrap: wrap;
-    width: 100%;
     height: 100%;
     position: relative;
     border-radius: 5px;
     padding: 1rem;
 }
 
-.product-card-item:hover {
-    border: black solid 1px;
+/* Simply hover effect for each card */
+.product-card-contents:hover {
+    border: rgb(0, 0, 0) solid 1px;
 }
 
+/* Product image adjustments */
 .product-image {
-    height: 10em;
+    height: 9em;
     object-fit: contain;
 }
 
+/* Product card itself with width and padding adjustments */
 .product-card {
     width: 25%;
     padding: 7px;
 }
 
+/* Spacing out all the paragraphs inside each item */
 .product-card p {
     width: 50%;
     text-align: center;
@@ -58,6 +66,7 @@ b {
     margin-top: 1rem;
 }
 
+/* 950px was set as I noticed the items were breaking up at this breakpoint */
 @media only screen and (max-width: 950px) {
 
     .product-card {
@@ -66,8 +75,9 @@ b {
     }
 }
 
-@media only screen and (max-width: 500px) {
+/* Mobile view */
 
+@media only screen and (max-width: 500px) {
     .product-card {
         width: 100%;
         align-items: center;

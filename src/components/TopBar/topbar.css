@@ -1,30 +1,21 @@
-/* contents of the top bar */
-/* setting height of it's contents, using flex to position the contents correctly */
-/* .topBarContents {
-    height: 10vh;
-    background-color: red;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    padding: 2rem;
-} */
-
-/* Positioning some spacing between drop down box and filter by label */
+/* Gave the label some margin spacing for hte top */
 .label-for-filter {
     margin-right: 1rem;
     
 }
 
+/* Same as above, created some margin for hte left */
 .search-bar-label {
     margin: 0 1rem;
 }
 
+/* Adjusted the search Bar width */
 .search-bar {
     width: 35%;
 }
 
 
+/* Ensured the top bar  sits correctly in mobile view*/
 
 @media only screen and (max-width: 600px) {
     .search-section {

@@ -1,5 +1,7 @@
 import styled from 'styled-components'
 
+// TopBarContents is using styled components, gave it a try.
+
 export const TopBarContents = styled.section.attrs({
     className: 'topBarContents'
 })`
